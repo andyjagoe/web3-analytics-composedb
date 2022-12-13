@@ -1,0 +1,29 @@
+{
+  "name": "web3-analytics-composedb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "author": "Andy Jagoe",
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "transform": {},
+    "testTimeout": 20000
+  },
+  "dependencies": {
+    "@ceramicnetwork/http-client": "^2.11.0",
+    "@composedb/client": "^0.3.1",
+    "@composedb/devtools-node": "^0.3.1",
+    "dids": "^3.4.0",
+    "dotenv": "^16.0.3",
+    "key-did-provider-ed25519": "^2.0.1",
+    "key-did-resolver": "^2.3.0",
+    "uint8arrays": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}

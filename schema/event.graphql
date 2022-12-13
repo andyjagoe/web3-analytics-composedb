@@ -1,0 +1,23 @@
+# An application event to track
+type Event @createModel(accountRelation: LIST, description:"An application event to track") {
+  app_id: String! @string(maxLength: 50)
+  did: String! @string(maxLength: 60)
+  created_at: DateTime!
+  updated_at: Float!
+  raw_payload: String @string(maxLength: 50000)
+  anonymousId: String @string(maxLength: 50)
+  event: String @string(maxLength: 50)
+  meta_ts: String @string(maxLength: 20)
+  meta_rid: String @string(maxLength: 50)
+  options: String @string(maxLength: 1000)
+  properties_url: String @string(maxLength: 2048)
+  properties_hash: String @string(maxLength: 1024)
+  properties_path: String @string(maxLength: 2048)
+  properties_title: String @string(maxLength: 1024)
+  properties_width: Int @int(min: 1)
+  properties_height: Int @int(min: 1)
+  properties_search: String @string(maxLength: 2048)
+  properties_referrer: String @string(maxLength: 2048)
+  traits_email: String @string(maxLength: 320)
+  type: String @string(maxLength: 50)
+}
