@@ -8,6 +8,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "author": "Andy Jagoe",
+  "license": "(Apache-2.0 OR MIT)",
   "jest": {
     "testEnvironment": "jest-environment-node",
     "transform": {},

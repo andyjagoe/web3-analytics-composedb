@@ -21,6 +21,7 @@ __generated__
 # misc
 .DS_Store
 *.pem
+runtime-composite.json
 
 # debug
 npm-debug.log*
