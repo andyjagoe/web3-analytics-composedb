@@ -1,0 +1,17 @@
+[Unit]
+Description=composedb
+After=network-online.target
+
+[Service]
+Type=simple
+Environment=NODE_VERSION=16
+Environment=CERAMIC_ENABLE_EXPERIMENTAL_COMPOSE_DB=true
+RemainAfterExit=yes
+WorkingDirectory=/home/ec2-user
+ExecStart=/home/ec2-user/.nvm/nvm-exec ceramic daemon
+User=ec2-user
+Restart=on-failure
+RestartSec=120s
+
+[Install]
+WantedBy=multi-user.target
