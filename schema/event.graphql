@@ -20,4 +20,35 @@ type Event @createModel(accountRelation: LIST, description:"An application event
   traits_email: String @string(maxLength: 320)
   type: String @string(maxLength: 50)
   userId: String @string(maxLength: 100)
+  geo_autonomousSystemNumber: Int @int(min: 0)
+  geo_autonomousSystemOrganization: String @string(maxLength: 255)
+  geo_city_geonameId: Int @int(min: 0)
+  geo_city_name: String @string(maxLength: 255)
+  geo_continent_code: String @string(maxLength: 2)
+  geo_continent_geonameId: Int @int(min: 0)
+  geo_continent_name: String @string(maxLength: 255)
+  geo_country_geonameId: Int @int(min: 0)
+  geo_country_isoCode: String @string(maxLength: 2)
+  geo_country_name: String @string(maxLength: 255)
+  geo_location_accuracyRadius: Int @int(min: 0)
+  geo_location_latitude: Float
+  geo_location_longitude: Float
+  geo_location_metroCode: Int @int(min: 0)
+  geo_location_timeZone: String @string(maxLength: 255)
+  geo_postal: String @string(maxLength: 255)
+  geo_registeredCountry_geonameId: Int @int(min: 0)
+  geo_registeredCountry_isoCode: String @string(maxLength: 2)
+  geo_registeredCountry_name: String @string(maxLength: 255)
+  geo_subdivision_geonameId: Int @int(min: 0)
+  geo_subdivision_isoCode: String @string(maxLength: 3)
+  geo_subdivision_name: String @string(maxLength: 255)
+  geo_traits_isAnonymous: Boolean
+  geo_traits_isAnonymousProxy: Boolean
+  geo_traits_isAnonymousVpn: Boolean
+  geo_traits_isHostingProvider: Boolean
+  geo_traits_isLegitimateProxy: Boolean
+  geo_traits_isPublicProxy: Boolean
+  geo_traits_isResidentialProxy: Boolean
+  geo_traits_isSatelliteProvider: Boolean
+  geo_traits_isTorExitNode: Boolean
 }
