@@ -1,9 +1,12 @@
 # Setting up composeDB for use with Web3 Analytics
 
-These instructions detail how to create, compile and deploy the composite required to run Web3 Analytics with ComposeDB under Ceramic. This process can be done by running a script that uses the API or it can be done using the CLI. Instructions for each are below.
+Deploy the Web3 Analytics encoded composite definition `web3-analytics-composite.json` found [here](https://github.com/andyjagoe/web3-analytics-composedb/blob/main/web3-analytics-composite.json) to your Ceramic node running ComposeDB using [these instructions](https://composedb.js.org/docs/preview/guides/using-composites/deployment). It is recommended to use this existing composite rather than deploying a new one so your data interoperates and remains composable with other analytics data.
 
 Documentation for [Web3 Analytics](http://web3analytics.network/) is available [here](https://web3-analytics.gitbook.io/product-docs/).
 
+
+# Creating and deploying a new model
+Only use the approach below if you're creating a new model and don't want your data to be interoperable/composable with other Web3 Analytics data.
 
 ## API Instructions
 
